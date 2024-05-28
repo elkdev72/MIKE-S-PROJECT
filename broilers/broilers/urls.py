@@ -20,6 +20,6 @@ from django.contrib.auth import views
 from users import views as user_views
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('users/', include('users.urls')),
+    path('accounts/', include('users.urls')),  # Changed from 'users/' to 'accounts/'
 
 ]
